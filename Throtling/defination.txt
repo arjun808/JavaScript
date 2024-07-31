@@ -1,0 +1,8 @@
+
+
+
+
+Throttling is a programming technique used to control the rate at which a function is executed.
+ Specifically, it ensures that a function is called at most once within a specified period of time, 
+ regardless of how many times the triggering event occurs. Throttling is commonly used to improve performance and resource utilization
+  in scenarios where events are fired frequently, such as scrolling, resizing, or button clicks.

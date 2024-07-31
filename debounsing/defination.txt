@@ -1,0 +1,4 @@
+Debouncing is a programming technique used to ensure that a function is invoked only after a specified period of inactivity. 
+It prevents a function from being called multiple times in quick succession by delaying its execution until a certain amount of time
+ has passed since the last call. This is particularly useful for handling events that fire frequently, such as keystrokes, window resizing, 
+ or scroll events,  to improve performance and resource utilization.
