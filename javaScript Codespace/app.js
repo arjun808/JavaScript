@@ -1,19 +1,37 @@
-const arr1=[1,2,2,3,4,4]
-const arr2=[2,2,4,5,5,6,2000]
-const ans=[]
-let i=0;
-let j=0;
-while(i<arr1.length && j<arr2.length){
-    if(arr1[i]<arr2[j]){
-        i++;
+function memo(fun) {
+    const cache = {};
+    return function (...args) {
+      const key = JSON.stringify(args);
+      if (!(key in cache)) {
+        cache[key] = fun(...args);
+      } else {
+        return cache[key];
+      }
+    };
+  }
+  
+  
+   function temp(num1,num2) {
+   
+    for(let i=0;i<5000;i++){
+      
     }
-    else if(arr1[i]>arr2[j]){
-        j++;
+    return num1*num2;
+    
+  }
+  
+  console.log(temp(1,2))
+  const memoTemp=memo(temp);
+  console.log(memoTemp(1,2));
+
+
+
+
+  function myMemo(fun){
+    let cache={}
+    return function(...args){
+        const key= JSON.stringify(args);
+        
     }
-    else {
-        ans.push(arr1[i]);
-        i++;
-        j++;
-    }
-}
-console.log(ans);
+
+  }

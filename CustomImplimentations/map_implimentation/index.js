@@ -32,3 +32,21 @@ Array.prototype.myFilter=function(cb){
     }
     return acc
  }
+
+
+
+
+ Array.prototype.meramap=function(cb){
+    let result=[];
+    for(let i=0;i<this.length;i++){
+        result.push(cb(this[i],i,this))
+    }
+    
+
+
+ }
+ const arrrr=[1,2,4,56,7];
+ arrrr.meramap((nums,i)=>{
+    console.log(nums,i);
+
+ })
